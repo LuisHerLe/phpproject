@@ -1,0 +1,70 @@
+<!-- 
+D:\Luifo\PHP\repo\phpproject\root\imagenes
+ -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
+ 	<title>Práctica de imágenes</title>
+ </head>
+ <body>
+ <h1>Imágenes dentro de HTML</h1>
+<!-- Ruta relativa: Se usa para poner los paths de una forma que si se lleva el contenido a otro PC, no vaya a fallar -->
+ <img src="imagenes/simpsons1.jpg" alt="Los Simpsons 1" title="Los Simpsons" width="255px"/>
+ <hr/>
+
+ <h1>Tablas</h1>
+
+<table border="1">
+	<tr>
+		<th>Nombre</th>
+		<th>Apellidos</th>
+		<th>País</th>
+	</tr>
+	<tr>
+		<td>Luis</td>
+		<td>Hernández Lenis</td>
+		<td>Colombia</td>
+	</tr>
+	<tr>
+		<td>Martha</td>
+		<td colspan="2">Lenis Velasquez</td>
+		<td>Colombia</td>
+	</tr>
+</table>
+<hr/>
+
+ <h1>Formulario</h1>
+<form>
+	<p>
+		<label for="name">Nombre: </label>
+		<input type="text" name="name" placeholder="Escribe tu nombre">
+	</p>
+	<p>
+		<label for="desc">Descripción: </label>
+		<textarea name="descripcion" placeholder="Comenta tu hobbie favorito"></textarea>
+	</p>
+
+	<p>
+		<label>Género: </label> <br/>
+		<input type="radio" name="genero" value="masculino"> Masculino <br/>
+		<input type="radio" name="genero" value="femenino"> Femenino <br/>
+	</p>
+
+	<p>
+		<label>Pasatiempos: </label>
+		<select>
+			<option value="ejercicio">Hacer ejercicio</option>
+			<option value="leer">Leer</option>
+			<option value="cocinar">Cocinar</option>
+			<option value="ninguno">Ninguno</option>
+		</select>
+	</p>
+
+	<p>
+		<input type="submit" value="Enviar"/>
+	</p>
+</form>
+
+ </body>
+ </html> 
